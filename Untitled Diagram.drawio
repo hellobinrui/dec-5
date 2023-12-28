@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T10:20:30.391Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="eUQcQGAGY83WWV5p65-l" version="20.8.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-12-28T03:37:10.110Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="boEwqNnxul55kUd0NL-G" version="20.8.0" type="github" pages="3">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1152" dy="628" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -39,6 +39,139 @@
         </mxCell>
         <mxCell id="IavI20LvnIlcKx4unQa--11" value="Run Dataiku Workflow" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-8">
           <mxGeometry x="220" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-1" value="Log QC Techlog Plug-In Solution - Depth Matching Workflow" style="shape=table;childLayout=tableLayout;startSize=40;collapsible=0;recursiveResize=0;expand=0;fillColor=none;fontStyle=1" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-8">
+          <mxGeometry x="-183" y="-40" width="761" height="383" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-2" value="Techlog" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-1">
+          <mxGeometry y="40" width="761" height="199" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-3" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=18;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;opacity=0;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-2">
+          <mxGeometry x="40" width="143" height="199" as="geometry">
+            <mxRectangle width="143" height="199" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-4" value="Wells, Datasets and logs" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-3">
+          <mxGeometry x="15" y="10" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-5" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=18;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;opacity=0;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-2">
+          <mxGeometry x="183" width="430" height="199" as="geometry">
+            <mxRectangle width="430" height="199" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-6" value="Parquet Files" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-5">
+          <mxGeometry x="30" y="110" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qtTwddTqzELyS3K5rnXr-5" source="qtTwddTqzELyS3K5rnXr-8" target="qtTwddTqzELyS3K5rnXr-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-8" value="Set up reference log and to-sync log for each well" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-5">
+          <mxGeometry x="20" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qtTwddTqzELyS3K5rnXr-5" source="qtTwddTqzELyS3K5rnXr-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="239" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-10" value="Run Dataiku Workflow" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-5">
+          <mxGeometry x="220" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-32" value="Input Folder" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-5">
+          <mxGeometry x="30" y="239" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-33" value="Trigger the scenario generating synced logs, shift table,&lt;br&gt;and sending email notification" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-5">
+          <mxGeometry x="122" y="231" width="312" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-34" value="Output Folder" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-5">
+          <mxGeometry x="475" y="239" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-35" value="Parquet Files" style="whiteSpace=wrap;html=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-5">
+          <mxGeometry x="448" y="108" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-36" value="Download depth matched logs" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-5">
+          <mxGeometry x="448" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-37" value="Run Dataiku Workflow" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-5">
+          <mxGeometry x="220" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-11" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=18;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;opacity=0;swimlaneLine=0;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-2">
+          <mxGeometry x="613" width="148" height="199" as="geometry">
+            <mxRectangle width="148" height="199" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-12" value="Parquet Files" style="whiteSpace=wrap;html=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-11">
+          <mxGeometry x="18" y="108" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qtTwddTqzELyS3K5rnXr-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="77.5" y="106" as="sourcePoint" />
+            <mxPoint x="77.5" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-14" value="Download depth matched logs" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-11">
+          <mxGeometry x="18" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qtTwddTqzELyS3K5rnXr-2" source="qtTwddTqzELyS3K5rnXr-4" target="qtTwddTqzELyS3K5rnXr-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qtTwddTqzELyS3K5rnXr-2" source="qtTwddTqzELyS3K5rnXr-10" target="qtTwddTqzELyS3K5rnXr-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-17" value="Dataiku" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-1">
+          <mxGeometry y="239" width="761" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-18" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-17">
+          <mxGeometry x="40" width="143" height="144" as="geometry">
+            <mxRectangle width="143" height="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-19" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-17">
+          <mxGeometry x="183" width="430" height="144" as="geometry">
+            <mxRectangle width="430" height="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-20" value="Input Folder" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-19">
+          <mxGeometry x="30" y="40" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-21" value="Trigger the scenario generating synced logs, shift table,&lt;br&gt;and sending email notification" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-19">
+          <mxGeometry x="122" y="32" width="312" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-22" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-17">
+          <mxGeometry x="613" width="148" height="144" as="geometry">
+            <mxRectangle width="148" height="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-23" value="Output Folder" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="qtTwddTqzELyS3K5rnXr-22">
+          <mxGeometry x="45" y="40" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qtTwddTqzELyS3K5rnXr-17" source="qtTwddTqzELyS3K5rnXr-20" target="qtTwddTqzELyS3K5rnXr-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="526" y="70" />
+              <mxPoint x="526" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qtTwddTqzELyS3K5rnXr-1" source="qtTwddTqzELyS3K5rnXr-6" target="qtTwddTqzELyS3K5rnXr-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qtTwddTqzELyS3K5rnXr-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="120" as="sourcePoint" />
+            <mxPoint x="260" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="110" />
+              <mxPoint x="260" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qtTwddTqzELyS3K5rnXr-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="qtTwddTqzELyS3K5rnXr-1" source="qtTwddTqzELyS3K5rnXr-23" target="qtTwddTqzELyS3K5rnXr-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="691" y="251" />
+              <mxPoint x="691" y="251" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-11" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=18;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;opacity=0;swimlaneLine=0;" parent="3nuBFxr9cyL0pnOWT2aG-3" vertex="1">
           <mxGeometry x="613" width="148" height="199" as="geometry">
@@ -402,6 +535,298 @@
         </mxCell>
         <mxCell id="r1xOB0gQgkMj9PUqhbcn-22" value="" style="rounded=0;whiteSpace=wrap;html=1;opacity=0;" vertex="1" parent="WIxS13H4lVwMlJwwGs9I-1">
           <mxGeometry x="50" y="477" width="864" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wtPvfe_WalGM4SydwF8Y-0" value="Wells, Datasets and logs" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="WIxS13H4lVwMlJwwGs9I-1">
+          <mxGeometry x="63" y="226" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wtPvfe_WalGM4SydwF8Y-1" value="Parquet Files" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIxS13H4lVwMlJwwGs9I-1">
+          <mxGeometry x="221" y="326" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wtPvfe_WalGM4SydwF8Y-2" value="Set up reference log and to-sync log for each well" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="WIxS13H4lVwMlJwwGs9I-1">
+          <mxGeometry x="211" y="226" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wtPvfe_WalGM4SydwF8Y-3" value="Input Folder" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="WIxS13H4lVwMlJwwGs9I-1">
+          <mxGeometry x="221" y="455" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wtPvfe_WalGM4SydwF8Y-4" value="Trigger the scenario generating synced logs, shift table,&lt;br&gt;and sending email notification" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIxS13H4lVwMlJwwGs9I-1">
+          <mxGeometry x="313" y="447" width="312" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="wtPvfe_WalGM4SydwF8Y-5" value="Output Folder" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="WIxS13H4lVwMlJwwGs9I-1">
+          <mxGeometry x="666" y="455" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wtPvfe_WalGM4SydwF8Y-6" value="Parquet Files" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIxS13H4lVwMlJwwGs9I-1">
+          <mxGeometry x="639" y="324" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wtPvfe_WalGM4SydwF8Y-7" value="Download depth matched logs" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="WIxS13H4lVwMlJwwGs9I-1">
+          <mxGeometry x="639" y="226" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wtPvfe_WalGM4SydwF8Y-8" value="Run Dataiku Workflow" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="WIxS13H4lVwMlJwwGs9I-1">
+          <mxGeometry x="411" y="226" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="gxSa5vPxi7qdCWVDuGr5" name="Page-3">
+    <mxGraphModel dx="1152" dy="628" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xiwGCx_ZQ6LVl-j6pgHv-1" value="Wells, Datasets and logs" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="100" y="113" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xiwGCx_ZQ6LVl-j6pgHv-2" value="Parquet Files" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="258" y="213" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xiwGCx_ZQ6LVl-j6pgHv-3" value="Set up reference log and to-sync log for each well" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="248" y="113" width="124" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="xiwGCx_ZQ6LVl-j6pgHv-4" value="Input Folder" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="258" y="342" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xiwGCx_ZQ6LVl-j6pgHv-5" value="Trigger the scenario generating synced logs, shift table,&lt;br&gt;and sending email notification" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="334" width="312" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="xiwGCx_ZQ6LVl-j6pgHv-6" value="Output Folder" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="703" y="342" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xiwGCx_ZQ6LVl-j6pgHv-7" value="Parquet Files" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="676" y="211" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xiwGCx_ZQ6LVl-j6pgHv-8" value="Download depth matched logs" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="676" y="113" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xiwGCx_ZQ6LVl-j6pgHv-9" value="Run Dataiku Workflow" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="448" y="113" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-1" value="Techlog" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="32" y="469" width="761" height="199" as="geometry" />
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-2" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=18;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;opacity=0;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-1">
+          <mxGeometry x="40" width="143" height="199" as="geometry">
+            <mxRectangle width="143" height="199" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-3" value="Users upload Wellbores, Datasets and logs" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-2">
+          <mxGeometry x="13" y="8" width="112" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-4" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=18;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;opacity=0;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-1">
+          <mxGeometry x="183" width="430" height="199" as="geometry">
+            <mxRectangle width="430" height="199" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-5" value="Parquet Files" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-4">
+          <mxGeometry x="27" y="109" width="101" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="29dCFMiJ24mailPW8gsE-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="TAoAWtX_m3iu3qA7PqV7-4" source="TAoAWtX_m3iu3qA7PqV7-7" target="TAoAWtX_m3iu3qA7PqV7-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="75" y="83" />
+              <mxPoint x="75" y="83" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="TAoAWtX_m3iu3qA7PqV7-4" source="TAoAWtX_m3iu3qA7PqV7-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="219" y="39" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-7" value="&amp;nbsp; &amp;nbsp;Users set up reference log and to-sync log for each well" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-4">
+          <mxGeometry x="16" y="8.5" width="131" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-9" value="Run Dataiku Workflow" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-4">
+          <mxGeometry x="220" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-15" value="Users Run Dataiku Workflow" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-4">
+          <mxGeometry x="220" y="9.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nfhs9SFUBAPvRaXoZGoI-10" value="" style="line;strokeWidth=1;html=1;fillStyle=dots;strokeColor=default;fillColor=none;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-4">
+          <mxGeometry x="-181" y="-6" width="983" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-27" value="Trigger" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillStyle=dots;strokeWidth=1;rotation=0;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-4">
+          <mxGeometry x="249" y="124" width="54" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="TAoAWtX_m3iu3qA7PqV7-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="260" as="targetPoint" />
+            <mxPoint x="275" y="76" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="275.5" y="160" />
+              <mxPoint x="275.5" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdasjBB9pq6_NaWvRzlA-3" value="Parse" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillStyle=dots;strokeWidth=1;rotation=0;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-4">
+          <mxGeometry x="81" y="77" width="54" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-16" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=18;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;opacity=0;swimlaneLine=0;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-1">
+          <mxGeometry x="613" width="148" height="199" as="geometry">
+            <mxRectangle width="148" height="199" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-19" value="Users Download depth matched logs" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-16">
+          <mxGeometry x="25" y="9.5" width="135" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="TAoAWtX_m3iu3qA7PqV7-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="88" y="265" as="targetPoint" />
+            <mxPoint x="88.5" y="70" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="88.5" y="165" />
+              <mxPoint x="88.5" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-36" value="Trigger" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillStyle=dots;strokeWidth=1;rotation=0;" vertex="1" parent="TAoAWtX_m3iu3qA7PqV7-16">
+          <mxGeometry x="42" y="125" width="54" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="TAoAWtX_m3iu3qA7PqV7-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="TAoAWtX_m3iu3qA7PqV7-1" source="TAoAWtX_m3iu3qA7PqV7-3" target="TAoAWtX_m3iu3qA7PqV7-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="176" y="39" />
+              <mxPoint x="176" y="39" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="TAoAWtX_m3iu3qA7PqV7-1" source="TAoAWtX_m3iu3qA7PqV7-15" target="TAoAWtX_m3iu3qA7PqV7-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nfhs9SFUBAPvRaXoZGoI-1" value="Dataiku" style="shape=tableRow;horizontal=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="32" y="668" width="771" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="Nfhs9SFUBAPvRaXoZGoI-2" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="Nfhs9SFUBAPvRaXoZGoI-1">
+          <mxGeometry x="40" width="143" height="144" as="geometry">
+            <mxRectangle width="143" height="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nfhs9SFUBAPvRaXoZGoI-3" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="Nfhs9SFUBAPvRaXoZGoI-1">
+          <mxGeometry x="184" y="6" width="430" height="144" as="geometry">
+            <mxRectangle width="430" height="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tvreD9w-iVbyFF1-U2Bg-1" value="" style="line;strokeWidth=1;html=1;fillStyle=dots;strokeColor=default;fillColor=none;" vertex="1" parent="Nfhs9SFUBAPvRaXoZGoI-3">
+          <mxGeometry x="-180.5" y="10" width="981.5" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-2" value="Parquet Files" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Nfhs9SFUBAPvRaXoZGoI-3">
+          <mxGeometry x="8" y="65" width="101" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-37" value="&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Scenario:&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;generating synced logs, shift table,&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;and sending email notification&lt;/span&gt;&lt;/font&gt;&lt;br style=&quot;border-color: var(--border-color); font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Output%20Folder%22%20style%3D%22shape%3Ddocument%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BboundedLbl%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22678%22%20y%3D%22716%22%20width%3D%22103%22%20height%3D%2269%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillStyle=dots;strokeColor=default;strokeWidth=1;fontSize=11;fillColor=none;" vertex="1" parent="Nfhs9SFUBAPvRaXoZGoI-3">
+          <mxGeometry x="194" y="61" width="121" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-22" value="Parquet Files" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Nfhs9SFUBAPvRaXoZGoI-3">
+          <mxGeometry x="18" y="76.5" width="103" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-23" value="Parquet Files" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Nfhs9SFUBAPvRaXoZGoI-3">
+          <mxGeometry x="29" y="86.5" width="101" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-63" value="" style="endArrow=classic;html=1;rounded=0;fontSize=11;dashed=1;" edge="1" parent="Nfhs9SFUBAPvRaXoZGoI-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="115" as="sourcePoint" />
+            <mxPoint x="184" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-65" value="" style="endArrow=classic;html=1;rounded=0;fontSize=11;dashed=1;" edge="1" parent="Nfhs9SFUBAPvRaXoZGoI-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="316" y="115" as="sourcePoint" />
+            <mxPoint x="346" y="115" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-67" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;Datasets: synced logs and shift table&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Nfhs9SFUBAPvRaXoZGoI-3">
+          <mxGeometry x="349" y="86.5" width="88" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Nfhs9SFUBAPvRaXoZGoI-6" value="" style="swimlane;swimlaneHead=0;swimlaneBody=0;connectable=0;fillColor=none;startSize=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="Nfhs9SFUBAPvRaXoZGoI-1">
+          <mxGeometry x="613" width="148" height="144" as="geometry">
+            <mxRectangle width="148" height="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-38" value="&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp; Scenario:&amp;nbsp; compressing Dataiku datasets into parquet files&lt;/font&gt;&lt;br style=&quot;border-color: var(--border-color); font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Output%20Folder%22%20style%3D%22shape%3Ddocument%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BboundedLbl%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22678%22%20y%3D%22716%22%20width%3D%22103%22%20height%3D%2269%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillStyle=dots;strokeColor=default;strokeWidth=1;fontSize=11;fillColor=none;" vertex="1" parent="Nfhs9SFUBAPvRaXoZGoI-6">
+          <mxGeometry x="48" y="70" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-66" value="" style="endArrow=classic;html=1;rounded=0;fontSize=11;dashed=1;" edge="1" parent="Nfhs9SFUBAPvRaXoZGoI-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="8" y="122" as="sourcePoint" />
+            <mxPoint x="51" y="122" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nfhs9SFUBAPvRaXoZGoI-9" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fillStyle=dots;strokeColor=default;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="32" y="918" width="987" height="389" as="geometry" />
+        </mxCell>
+        <mxCell id="29dCFMiJ24mailPW8gsE-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;" edge="1" parent="1" source="oWKiz5bsHW4lTqZeQ6K0-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="287" y="729" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="287" y="652" />
+              <mxPoint x="287" y="652" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-1" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;Log QC Solution - Depth Matching Workflow&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillStyle=dots;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="333" y="439" width="408" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-3" value="Parquet Files" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="252" y="588" width="101" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-4" value="Parquet Files" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="262" y="598" width="101" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" target="oWKiz5bsHW4lTqZeQ6K0-49">
+          <mxGeometry x="-0.2793" y="-5" relative="1" as="geometry">
+            <mxPoint x="941" y="744" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="941" y="674" />
+              <mxPoint x="941" y="674" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-6" value="Parquet Files" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="897" y="758" width="101" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-45" value="Parquet Files" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="906" y="767" width="101" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-47" value="Parquet Files" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="882" y="580" width="101" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" target="oWKiz5bsHW4lTqZeQ6K0-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="941" y="578" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="941" y="567" />
+              <mxPoint x="941" y="567" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-49" value="Parquet Files" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="892" y="590" width="101" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-54" value="" style="endArrow=classic;html=1;rounded=0;fontSize=11;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="815.75" y="789" as="sourcePoint" />
+            <mxPoint x="887.75" y="789" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-56" value="Upload to Techlog" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillStyle=dots;strokeWidth=1;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="884" y="657" width="59.5" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-57" value="&amp;nbsp;Synced logs and shift tables automatically appear in Wellbores" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="888" y="472" width="119" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="812" y="512" as="sourcePoint" />
+            <mxPoint x="887.75" y="512" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="804.75" y="512" />
+              <mxPoint x="887.75" y="512" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWKiz5bsHW4lTqZeQ6K0-26" value="Upload to Dataiku" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillStyle=dots;strokeWidth=1;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="281.5" y="659" width="81.5" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="AdasjBB9pq6_NaWvRzlA-4" value="Parse" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillStyle=dots;strokeWidth=1;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="895" y="558" width="54" height="25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
